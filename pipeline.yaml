@@ -48,7 +48,7 @@ spec:
       runAfter:
         - git-clone
       workspaces:
-        - name: source
+        - name: output
           workspace: output
 
     - name: nose
@@ -57,7 +57,7 @@ spec:
       runAfter:
         - flake8
       workspaces:
-        - name: source
+        - name: output
           workspace: output
 
     - name: build-image
